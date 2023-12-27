@@ -1,5 +1,5 @@
-ssh-keygen -R '[localhost]:58224'
-pkill -f "ssh -i $(pwd)/ssh_tunnel/tunnel_rsa tunnel@localhost -p 58224"
+ssh-keygen -R '[localhost]:58225'
+pkill -f "ssh -i $(pwd)/ssh_tunnel/tunnel_rsa tunnel@localhost -p 58225"
 docker stop metis-otel-collector -t 1
 docker rm --force metis-otel-collector
 docker rmi --force 357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:e1164b922b63b891b8a7761dc44e2233372b6d70

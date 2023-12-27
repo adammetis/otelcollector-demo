@@ -35,7 +35,7 @@ $apiKey = [System.Environment]::GetEnvironmentVariable('METIS_API_KEY');
 docker run `
   --name metis-otel-collector `
   -e "METIS_API_KEY=${apiKey}" `
-  -e "CONNECTION_STRINGS=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" `
+  -e "CONNECTION_STRING=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" `
   --network 'container:otelcollector_ssh' `
-  357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:e1164b922b63b891b8a7761dc44e2233372b6d70
+  357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:latest
 }

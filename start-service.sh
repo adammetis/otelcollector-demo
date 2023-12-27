@@ -20,6 +20,6 @@ ssh -i "$(pwd)"/ssh_tunnel/tunnel_rsa tunnel@localhost -p 58225 -4 -o StrictHost
 docker run \
   --name metis-otel-collector \
   -e "METIS_API_KEY=${METIS_API_KEY}" \
-  -e "CONNECTION_STRINGS=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" \
+  -e "CONNECTION_STRING=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" \
   --network 'container:otelcollector_ssh' \
-  357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:e1164b922b63b891b8a7761dc44e2233372b6d70
+  357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:latest
