@@ -21,5 +21,6 @@ docker run \
   --name metis-otel-collector \
   -e "METIS_API_KEY=${METIS_API_KEY}" \
   -e "CONNECTION_STRING=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" \
+  -e "LOG_LEVEL=debug" \
   --network 'container:otelcollector_ssh' \
   357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:latest
