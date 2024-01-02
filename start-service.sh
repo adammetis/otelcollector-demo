@@ -23,4 +23,4 @@ docker run \
   -e "CONNECTION_STRING=postgresql://postgres:postgres@127.0.0.1:5432/demo?schema=imdb" \
   -e "LOG_LEVEL=debug" \
   --network 'container:otelcollector_ssh' \
-  357242092635.dkr.ecr.eu-central-1.amazonaws.com/metis-otel-collector:latest
+  public.ecr.aws/o2c0x5x8/metis-otel-collector:latest
