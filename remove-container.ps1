@@ -10,4 +10,5 @@ docker rm --force otelcollector_ssh
 docker rmi --force otelcollector_ssh
 docker rmi --force public.ecr.aws/o2c0x5x8/community-images-backup:lscr.io-linuxserver-openssh-server
 docker system prune
+docker image prune -a
 docker volume prune
